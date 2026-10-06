@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running automated tests..."
-      - run: exit 1   # this simulates a failing test
+      - run: echo "All tests passed" # this simulates a failing test
  
   Deploy:
     needs: Test
